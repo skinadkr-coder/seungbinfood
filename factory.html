@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제조 거점 - (주)승빈푸드</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="site.css">
+  <style>
+    .site-head{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid rgba(15,23,42,.06);box-shadow:0 8px 24px rgba(15,23,42,.05)}
+    .head-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"logo cta" "tabs tabs";align-items:center;padding:12px 16px 0}
+    .logo{grid-area:logo;display:flex;align-items:center;gap:7px;min-width:0;color:#c2410c;font-weight:800;font-size:17px;letter-spacing:-.04em;text-decoration:none}
+    .logo-mark{width:30px;height:30px;border-radius:10px;background:linear-gradient(160deg,#ea580c,#9a3412);color:#fff;font-size:14px;font-weight:800;display:grid;place-items:center;flex-shrink:0}
+    .logo em{font-style:normal;font-size:11px;font-weight:700;color:#9a3412;background:#fff7ed;border:1px solid #ffedd5;padding:2px 7px;border-radius:999px}
+    .btn-header{grid-area:cta;background:#0f172a;color:#fff;text-decoration:none;padding:8px 13px;border-radius:999px;font-size:13px;font-weight:700}
+    .btn-header:active{transform:scale(.96)}
+    .tabbar{grid-area:tabs;display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:10px 16px 12px;-webkit-overflow-scrolling:touch;scrollbar-width:none;list-style:none}
+    .tabbar::-webkit-scrollbar{display:none}
+    .tabbar a{flex:0 0 auto;display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;background:#f1f5f9;color:#475569;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap}
+    .tabbar a:active{transform:scale(.96)}
+    .tabbar a.active{background:#0f172a;color:#fff}
+  </style>
+</head>
+<body>
+
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">승</span>(주)승빈푸드 <em>직영</em></a>
+      <a href="partner.html" class="btn-header">제휴 문의</a>
+      <nav class="tabbar" aria-label="주요 메뉴">
+        <a href="index.html">홈</a>
+        <a href="about.html">회사소개</a>
+        <a href="shop.html">김치광장</a>
+        <a href="factory.html" class="active">제조 거점</a>
+        <a href="business.html">QR 커머스</a>
+        <a href="partner.html">대리점·제휴</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-page">
+    <div class="hero-badge">HACCP 협력 공장</div>
+    <h1>만드는 곳은<br>두 거점입니다</h1>
+    <p>승빈푸드는 판매를 맡고, 김치는 인증 공장에서 나옵니다.</p>
+    <img class="hero-photo" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=75" alt="출고 물류 창고">
+  </section>
+
+  <main class="wrap">
+    <article class="pcard">
+      <img src="factory1.jpg" alt="이맛식품 제조 현장" onerror="this.src='https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1400&q=75'">
+      <div class="txt">
+        <span class="tag">거점 01 · HACCP</span>
+        <h3>농업회사법인 (주)이맛식품</h3>
+        <p>포기·백·총각. 국산 재료로 정예 생산.</p>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <img src="factory2.jpg" alt="정원푸드 출고 물류" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=75'">
+      <div class="txt">
+        <span class="tag">거점 02 · HACCP</span>
+        <h3>(주)정원푸드</h3>
+        <p>업소용 대용량과 가정용을 당일 직송.</p>
+      </div>
+    </article>
+
+    <h2 class="sec-title">다섯 단계</h2>
+    <div class="grid">
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=300&q=70" alt="입고되는 신선한 채소">
+        <div><b>1. 산지 수급</b><span>국내 농가 계약 채소</span></div>
+      </div>
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=300&q=70" alt="재료를 손질하는 조리 과정">
+        <div><b>2. 세척</b><span>이물질 제거 후 절임</span></div>
+      </div>
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=300&q=70" alt="소금과 고춧가루 양념">
+        <div><b>3. 절임·양념</b><span>천일염, 국산 고춧가루</span></div>
+      </div>
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1540162621994-4b096ef8523b?auto=format&fit=crop&w=300&q=70" alt="완성된 김치">
+        <div><b>4. 버무림</b><span>배합 후 숙성</span></div>
+      </div>
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=300&q=70" alt="출고를 기다리는 물류 창고">
+        <div><b>5. 검사·출고</b><span>검사 통과 후 콜드체인</span></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-title">주식회사 승빈푸드</div>
+    <div class="footer-info">
+      <span><strong>협력</strong> (주)이맛식품 · (주)정원푸드</span>
+      <span><strong>대표</strong> 최순진</span>
+    </div>
+    <div class="copyright">© 2026 주식회사 승빈푸드</div>
+  </footer>
+  <script src="nav.js"></script>
+</body>
+</html>

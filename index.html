@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(주)승빈푸드 - 김치광장</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="site.css">
+  <style>
+    .site-head{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid rgba(15,23,42,.06);box-shadow:0 8px 24px rgba(15,23,42,.05)}
+    .head-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"logo cta" "tabs tabs";align-items:center;padding:12px 16px 0}
+    .logo{grid-area:logo;display:flex;align-items:center;gap:7px;min-width:0;color:#c2410c;font-weight:800;font-size:17px;letter-spacing:-.04em;text-decoration:none}
+    .logo-mark{width:30px;height:30px;border-radius:10px;background:linear-gradient(160deg,#ea580c,#9a3412);color:#fff;font-size:14px;font-weight:800;display:grid;place-items:center;flex-shrink:0}
+    .logo em{font-style:normal;font-size:11px;font-weight:700;color:#9a3412;background:#fff7ed;border:1px solid #ffedd5;padding:2px 7px;border-radius:999px}
+    .btn-header{grid-area:cta;background:#0f172a;color:#fff;text-decoration:none;padding:8px 13px;border-radius:999px;font-size:13px;font-weight:700}
+    .btn-header:active{transform:scale(.96)}
+    .tabbar{grid-area:tabs;display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:10px 16px 12px;-webkit-overflow-scrolling:touch;scrollbar-width:none;list-style:none}
+    .tabbar::-webkit-scrollbar{display:none}
+    .tabbar a{flex:0 0 auto;display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;background:#f1f5f9;color:#475569;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap}
+    .tabbar a:active{transform:scale(.96)}
+    .tabbar a.active{background:#0f172a;color:#fff}
+  </style>
+</head>
+<body>
+
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">승</span>(주)승빈푸드 <em>직영</em></a>
+      <a href="partner.html" class="btn-header">제휴 문의</a>
+      <nav class="tabbar" aria-label="주요 메뉴">
+        <a href="index.html" class="active">홈</a>
+        <a href="about.html">회사소개</a>
+        <a href="shop.html">김치광장</a>
+        <a href="factory.html">제조 거점</a>
+        <a href="business.html">QR 커머스</a>
+        <a href="partner.html">대리점·제휴</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-home">
+    <div class="hero-badge">판매가 본업 · 김치광장</div>
+    <h1>가성비 김치와<br>명품을 한곳에서</h1>
+    <p class="hero-sub">공장 직거래와 양은선 명품 김치.</p>
+    <p class="hero-lead">직영 쇼핑몰 김치광장에서 팝니다.</p>
+    <a class="btn-primary" href="shop.html">김치광장 보기</a>
+    <img class="hero-photo" src="https://images.unsplash.com/photo-1540162621994-4b096ef8523b?auto=format&fit=crop&w=1200&q=75" alt="그릇에 담긴 배추김치">
+  </section>
+
+  <main class="wrap">
+    <h2 class="sec-title">오늘 고르는 두 가지</h2>
+    <div class="grid two">
+      <a class="pcard" href="shop.html">
+        <img src="https://images.unsplash.com/photo-1540162621994-4b096ef8523b?auto=format&fit=crop&w=1200&q=75" alt="그릇에 담긴 배추김치">
+        <div class="txt">
+          <span class="tag">공장 직거래</span>
+          <h3>가성비 김치</h3>
+          <p>중간 유통 없이, 공장에서 식탁으로.</p>
+        </div>
+      </a>
+      <a class="pcard" href="shop.html">
+        <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=1200&q=75" alt="김치가 함께 놓인 한상">
+        <div class="txt">
+          <span class="tag">프라이빗</span>
+          <h3>양은선 명품 김치</h3>
+          <p>최고 품질만. 김치광장에서만.</p>
+        </div>
+      </a>
+    </div>
+
+    <h2 class="sec-title">이렇게 이어집니다</h2>
+    <div class="grid">
+      <a class="mini" href="factory.html">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=70" alt="신선한 채소 진열">
+        <div><b>국산 재료</b><span>HACCP 거점에서 만듭니다</span></div>
+      </a>
+      <a class="mini" href="business.html">
+        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=70" alt="주문에 쓰는 스마트폰">
+        <div><b>QR 한 장</b><span>매장 벽에서 재고 없이 판매</span></div>
+      </a>
+      <a class="mini" href="partner.html">
+        <img src="https://images.unsplash.com/photo-1556742111-a301076d9d18?auto=format&fit=crop&w=400&q=70" alt="휴대폰으로 결제하는 장면">
+        <div><b>함께 버는 구조</b><span>제휴점 10% · 대리점 5%</span></div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-title">주식회사 승빈푸드</div>
+    <div class="footer-info">
+      <span><strong>대표</strong> 최순진</span>
+      <span><strong>사업자</strong> 111-81-37107</span>
+      <span><strong>통신판매</strong> 제 2026-고양덕양구-0851 호</span>
+      <span>경기 고양시 덕양구 동축로 70, 현대프리미어캠퍼스지축역 지식산업센터 3층</span>
+      <span><strong>몰</strong> 김치광장 sbfood26.com</span>
+    </div>
+    <div class="copyright">© 2026 주식회사 승빈푸드</div>
+  </footer>
+  <script src="nav.js"></script>
+</body>
+</html>

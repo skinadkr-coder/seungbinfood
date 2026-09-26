@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR 커머스 - (주)승빈푸드</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="site.css">
+  <style>
+    .site-head{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid rgba(15,23,42,.06);box-shadow:0 8px 24px rgba(15,23,42,.05)}
+    .head-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"logo cta" "tabs tabs";align-items:center;padding:12px 16px 0}
+    .logo{grid-area:logo;display:flex;align-items:center;gap:7px;min-width:0;color:#c2410c;font-weight:800;font-size:17px;letter-spacing:-.04em;text-decoration:none}
+    .logo-mark{width:30px;height:30px;border-radius:10px;background:linear-gradient(160deg,#ea580c,#9a3412);color:#fff;font-size:14px;font-weight:800;display:grid;place-items:center;flex-shrink:0}
+    .logo em{font-style:normal;font-size:11px;font-weight:700;color:#9a3412;background:#fff7ed;border:1px solid #ffedd5;padding:2px 7px;border-radius:999px}
+    .btn-header{grid-area:cta;background:#0f172a;color:#fff;text-decoration:none;padding:8px 13px;border-radius:999px;font-size:13px;font-weight:700}
+    .btn-header:active{transform:scale(.96)}
+    .tabbar{grid-area:tabs;display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:10px 16px 12px;-webkit-overflow-scrolling:touch;scrollbar-width:none;list-style:none}
+    .tabbar::-webkit-scrollbar{display:none}
+    .tabbar a{flex:0 0 auto;display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;background:#f1f5f9;color:#475569;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap}
+    .tabbar a:active{transform:scale(.96)}
+    .tabbar a.active{background:#0f172a;color:#fff}
+  </style>
+</head>
+<body>
+
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">승</span>(주)승빈푸드 <em>직영</em></a>
+      <a href="partner.html" class="btn-header">제휴 문의</a>
+      <nav class="tabbar" aria-label="주요 메뉴">
+        <a href="index.html">홈</a>
+        <a href="about.html">회사소개</a>
+        <a href="shop.html">김치광장</a>
+        <a href="factory.html">제조 거점</a>
+        <a href="business.html" class="active">QR 커머스</a>
+        <a href="partner.html">대리점·제휴</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-page">
+    <div class="hero-badge">무재고 판매</div>
+    <h1>벽의 QR 한 장이<br>매장이 됩니다</h1>
+    <p>재고·배송·응대는 본사. 점주는 수수료만 받습니다.</p>
+    <img class="hero-photo" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=75" alt="주문에 쓰는 스마트폰">
+  </section>
+
+  <main class="wrap">
+    <div class="grid">
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=300&q=70" alt="QR을 스캔하는 스마트폰">
+        <div><b>1. 스캔</b><span>손님이 포스터를 찍습니다</span></div>
+      </div>
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1556742111-a301076d9d18?auto=format&fit=crop&w=300&q=70" alt="휴대폰 결제">
+        <div><b>2. 가입·결제</b><span>번호 네 자리로 바로 주문</span></div>
+      </div>
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=300&q=70" alt="출고 창고">
+        <div><b>3. 공장 직송</b><span>거점에서 집까지 배송</span></div>
+      </div>
+      <div class="mini">
+        <img src="https://images.unsplash.com/photo-1540162621994-4b096ef8523b?auto=format&fit=crop&w=300&q=70" alt="판매되는 김치">
+        <div><b>4. 자동 정산</b><span>팔릴 때마다 수수료 적립</span></div>
+      </div>
+    </div>
+
+    <h2 class="sec-title">나누는 비율</h2>
+    <div class="nums">
+      <div class="num">
+        <strong>10%</strong>
+        <b>제휴 매장</b>
+        <span>그 매장 QR 매출</span>
+      </div>
+      <div class="num">
+        <strong>5%</strong>
+        <b>지역 대리점</b>
+        <span>관할 매장 매출 전체</span>
+      </div>
+    </div>
+
+    <article class="pcard">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1400&q=75" alt="식당 조리 현장">
+      <div class="txt">
+        <span class="tag">식당·프랜차이즈</span>
+        <h3>거래명세서로 직납</h3>
+        <p>카드 결제 대신 명세서로. 공장에서 업장으로.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-title">주식회사 승빈푸드</div>
+    <div class="footer-info">
+      <span><strong>대표</strong> 최순진</span>
+      <span><strong>몰</strong> 김치광장 sbfood26.com</span>
+    </div>
+    <div class="copyright">© 2026 주식회사 승빈푸드</div>
+  </footer>
+  <script src="nav.js"></script>
+</body>
+</html>
