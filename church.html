@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>교회 제휴 - (주)승빈푸드</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-  <link rel="stylesheet" href="site.css">
   <style>
-    body.has-dock{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+    body{color:#1e293b;background:#eef2f6;line-height:1.5;padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 22px 0}
+    .hero-badge{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:999px;background:#fff7ed;border:1px solid #ffedd5;color:#c2410c;font-size:12px;font-weight:700;margin-bottom:12px}
+    .hero h1{font-size:26px;font-weight:800;line-height:1.35;color:#0f172a;margin:0 0 10px;word-break:keep-all}
+    .hero p{color:#64748b;font-size:14px;margin:0 auto;max-width:22em;word-break:keep-all}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 22px 40px}
+    .wrap>*+*{margin-top:28px}
+    .sec-title{font-size:22px;font-weight:800;color:#0f172a;margin:0 2px 16px;word-break:keep-all}
     .player{background:#0f172a;border-radius:18px;overflow:hidden;box-shadow:0 12px 28px rgba(15,23,42,.16)}
     .player video{display:block;width:100%;height:auto;max-height:72vh;background:#000;object-fit:contain}
-    .player-note{margin-top:8px;font-size:12px;color:var(--sub);word-break:keep-all}
+    .player-note{margin-top:8px;font-size:12px;color:#64748b;word-break:keep-all}
 
     .zero{background:linear-gradient(165deg,#0f172a 0%,#1e293b 58%,#7c2d12 140%);color:#f8fafc;border-radius:22px;padding:22px 16px 16px;box-shadow:0 16px 36px rgba(15,23,42,.18)}
     .zero-kicker{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:999px;background:rgba(253,186,116,.16);border:1px solid rgba(253,186,116,.45);color:#fdba74;font-size:12px;font-weight:800;letter-spacing:.02em}
@@ -26,7 +35,7 @@
     .fund span{display:block;margin-top:3px;font-size:13px;line-height:1.45;word-break:keep-all}
 
     .slides{display:flex;flex-direction:column;gap:14px}
-    .slides figure{margin:0;background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 8px 18px rgba(15,23,42,.05)}
+    .slides figure{margin:0;background:#fff;border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;box-shadow:0 8px 18px rgba(15,23,42,.05)}
     .slides img{width:100%;height:auto;background:#f8fafc}
     .slides figcaption{padding:10px 12px 12px;font-size:12px;font-weight:700;color:#64748b}
 
@@ -54,9 +63,9 @@
     }
   </style>
 </head>
-<body class="has-dock">
+<body>
 
-  <section class="hero hero-page">
+  <section class="hero">
     <div class="hero-badge">교회 협력</div>
     <h1>판매·재고·비용<br>교회 3-ZERO</h1>
     <p>성도 결제액의 10%가 선교·구제 기금으로 자동 적립됩니다.</p>
@@ -145,7 +154,7 @@
     </a>
   </main>
 
-  <nav class="dock" aria-label="바로가기">
+  <div class="dock">
     <div class="dock-inner">
       <a class="dock-sample" href="tel:1877-5923">
         <b>무료 샘플</b>
@@ -156,6 +165,6 @@
         <small>1877-5923</small>
       </a>
     </div>
-  </nav>
+  </div>
 </body>
 </html>
